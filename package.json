@@ -1,0 +1,39 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server/index.js",
+    "build:clean": "rimraf \"dist/!(.git*|Procfile)**\"",
+    "build:copy": "copyfiles -u 1 public/* public/**/* dist",
+    "prebuild": "npm run build:clean && npm run build:copy",
+    "dev": "npm run prebuild && cross-env NODE_ENV=development webpack --config=webpack.config.js --watch",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "express": "^4.17.1",
+    "less-loader": "^6.2.0",
+    "postcss-loader": "^3.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-switch-theme": "^0.3.0",
+    "style-loader": "^1.2.1"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12",
+    "copyfiles": "2.1.0",
+    "cross-env": "5.2.0"
+  }
+}
