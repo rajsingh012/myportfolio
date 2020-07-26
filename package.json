@@ -26,6 +26,7 @@
     "postcss-loader": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-switch-theme": "^0.3.0",
     "style-loader": "^1.2.1"
   },

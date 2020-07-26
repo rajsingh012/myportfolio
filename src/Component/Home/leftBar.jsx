@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom'
+import menuList from './../static/menubar.json';
 import './../../css/_leftbar.less';
 
 class LeftBar extends Component {
@@ -6,30 +9,19 @@ class LeftBar extends Component {
         return (
             <div className="leftbar__wrapper">
                 <ul className="leftbar__wrapper--ullist">
-                    <li className="leftbar__wrapper--listing">
-                        <span className="leftbar__wrapper--iconsbg">
-                            <span className="leftbar__wrapper--homeicon"></span>
-                        </span>
-                        <span className="leftbar__wrapper--listname">Home</span>
-                    </li>
-                    <li className="leftbar__wrapper--listing">
-                        <span className="leftbar__wrapper--iconsbg">
-                            <span className="leftbar__wrapper--homeicon"></span>
-                        </span>
-                        <span className="leftbar__wrapper--listname">About Us</span>
-                    </li>
-                    <li className="leftbar__wrapper--listing">
-                        <span className="leftbar__wrapper--iconsbg">
-                            <span className="leftbar__wrapper--homeicon"></span>
-                        </span>
-                        <span className="leftbar__wrapper--listname">Portfolio</span>
-                    </li>
-                    <li className="leftbar__wrapper--listing">
-                        <span className="leftbar__wrapper--iconsbg">
-                            <span className="leftbar__wrapper--homeicon"></span>
-                        </span>
-                        <span className="leftbar__wrapper--listname">Contact Us</span>
-                    </li>
+                    {menuList.map(list => {
+                        const { id = '', displayLabel = '', key = '', urlName = '', faIcon = '' } = list;
+                        return (
+                            <li className="leftbar__wrapper--listing" key={key}>
+                                <Link to={urlName}>
+                                    <span className="leftbar__wrapper--iconsbg">
+                                        <span className={faIcon}></span>
+                                    </span>
+                                    <span className="leftbar__wrapper--listname">{displayLabel}</span>
+                                </Link>
+                            </li>
+                        )
+                    })}
                 </ul>
             </div>
         )

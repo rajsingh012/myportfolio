@@ -6,10 +6,11 @@ const htmlPlugin = new HtmlWebPackPlugin({
 });
 module.exports = {
     entry: "./src/index.js",
-    output: { // NEW
+    output: {
         path: path.join(__dirname, 'dist'),
-        filename: "[name].js"
-    }, // NEW Ends
+        filename: "[name].js",
+        publicPath: '/'
+    },
     mode: 'development',
     plugins: [htmlPlugin],
     resolve: {
@@ -38,5 +39,10 @@ module.exports = {
                 ]
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: {
+            index: 'dist/index.html'
+        },
     }
 };

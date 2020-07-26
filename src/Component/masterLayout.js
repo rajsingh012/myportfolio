@@ -1,14 +1,21 @@
 import React, { Component, Fragment } from 'react';
-import Home from './Home/index';
+import { BrowserRouter } from 'react-router-dom';
+import ThemeMode from './themeMode';
+import LeftBar from './Home/leftBar';
+import Main from './Home/routeMain';
 import './../css/_reset.less';
 
 class MasterLayout extends Component {
 
     render() {
         return (
-            <Fragment>
-                <Home />
-            </Fragment>
+            <BrowserRouter>
+                <div className="homepage_container">
+                    <LeftBar />
+                    <Main />
+                </div>
+                <ThemeMode />
+            </BrowserRouter>
         )
     }
 }
