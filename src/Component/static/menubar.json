@@ -11,20 +11,20 @@
         "displayLabel": "About",
         "key": "aboutus",
         "urlName": "/aboutus",
-        "faIcon": "leftbar__wrapper--homeicon"
+        "faIcon": "leftbar__wrapper--abouticon"
     },
     {
         "id": 3,
         "displayLabel": "Portfolio",
         "key": "portfolio",
         "urlName": "/portfolio",
-        "faIcon": "leftbar__wrapper--homeicon"
+        "faIcon": "leftbar__wrapper--workicon"
     },
     {
         "id": 4,
         "displayLabel": "Contact Us",
         "key": "contactus",
         "urlName": "/contactus",
-        "faIcon": "leftbar__wrapper--homeicon"
+        "faIcon": "leftbar__wrapper--contacticon"
     }
 ]

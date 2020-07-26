@@ -15,7 +15,7 @@ class RightBar extends Component {
                         I'm
                      <span className="rightbar__wrapper--name">Raj Singh</span>
                     </h4>
-                    <p className="rightbar__wrapper--paragraph">I'm a Product based web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p>
+                    <p className="rightbar__wrapper--paragraph">I'm a web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p>
 
                     <button className="rightbar__wrapper--aboutbtn">More About Us</button>
                 </div>
