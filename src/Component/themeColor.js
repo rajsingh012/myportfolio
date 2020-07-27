@@ -1,7 +1,7 @@
 const themeColors = {
     light: {
         background: "#fff",
-        color: "#696969",
+        color: "#2b2a2a",
         boxShadow: '0 0 5px #ece5e5',
         hoverBgColor: '#f5f5f5',
     },
