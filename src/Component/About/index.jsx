@@ -40,6 +40,7 @@ class AboutUs extends Component {
                             </div>
                             <a className="aboutus__mainwrap--downloadcv" href="./../../../public/img/Resume.docx" download>
                                 Download CV
+                                <span className="aboutus__mainwrap--downloadimg"></span>
                             </a>
                         </div>
                         <div className="aboutus__mainwrap--rightbox">

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './../../css/_rightbar.less';
 
 class RightBar extends Component {
@@ -17,7 +18,9 @@ class RightBar extends Component {
                     </h4>
                     <p className="rightbar__wrapper--paragraph">I'm a web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p>
 
-                    <button className="rightbar__wrapper--aboutbtn">More About Us</button>
+                    <Link className="rightbar__wrapper--aboutbtn" to={'/aboutus'}>
+                        More About Us
+                        </Link>
                 </div>
             </div>
         )
