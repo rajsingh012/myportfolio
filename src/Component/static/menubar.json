@@ -15,13 +15,20 @@
     },
     {
         "id": 3,
+        "displayLabel": "Skills",
+        "key": "technology",
+        "urlName": "/skills",
+        "faIcon": "leftbar__wrapper--globalicon"
+    },
+    {
+        "id": 4,
         "displayLabel": "Portfolio",
         "key": "portfolio",
         "urlName": "/portfolio",
         "faIcon": "leftbar__wrapper--workicon"
     },
     {
-        "id": 4,
+        "id": 5,
         "displayLabel": "Contact Us",
         "key": "contactus",
         "urlName": "/contactus",

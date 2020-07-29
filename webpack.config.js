@@ -26,6 +26,22 @@ module.exports = {
                 }
             },
             {
+                test: /\.css$/,
+                loader: "style-loader!css-loader"
+            },
+            {
+                test: /\.(ttf|eot|woff|gif|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                use: [{
+                    loader: 'file-loader'
+                }]
+            },
+            {
+                test: /.*\.(gif|png|jpe?g|svg)$/i,
+                use: [{
+                    loader: "url-loader"
+                }]
+            },
+            {
                 test: /\.less$/,
                 use: [{
                     loader: "style-loader" // creates style nodes from JS strings
