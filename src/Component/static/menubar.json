@@ -33,5 +33,12 @@
         "key": "contactus",
         "urlName": "/contactus",
         "faIcon": "leftbar__wrapper--contacticon"
+    },
+    {
+        "id": 6,
+        "displayLabel": "Blog",
+        "key": "blog",
+        "urlName": "/blog",
+        "faIcon": "leftbar__wrapper--blogicon"
     }
 ]
