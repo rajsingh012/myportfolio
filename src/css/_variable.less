@@ -31,6 +31,23 @@ body {
     mask: url(@value) no-repeat center / contain;
     -webkit-mask: url(@value) no-repeat center / contain;
 }
+.rightbar__wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus__section {
+    &--heading {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &--colortext {
+        color: @primaryColor;
+        margin-left: 5px;
+    }
+}
 
 @primaryColor : var(--primaryColor, #10AC84);
 @backgroundColor : var(--background);
