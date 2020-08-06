@@ -1,7 +1,8 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const CompressionPlugin = require('compression-webpack-plugin');
 const path = require('path');
 const htmlPlugin = new HtmlWebPackPlugin({
-    template: "./src/index.ejs",
+    template: "./public/index.ejs",
     filename: "./index.ejs"
 });
 module.exports = {
@@ -12,7 +13,9 @@ module.exports = {
         publicPath: '/'
     },
     mode: 'development',
-    plugins: [htmlPlugin],
+    plugins: [htmlPlugin,
+        new CompressionPlugin()
+    ],
     resolve: {
         extensions: ['.js', '.jsx']
     },
