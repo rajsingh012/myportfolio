@@ -2,6 +2,20 @@ import React, { Component } from 'react';
 import './../../css/_contactus.less';
 
 class ContactUs extends Component {
+    state = {
+        contactForm: {}
+    }
+
+    onChaneHandler = (event) => {
+        const { name = '', value = '' } = event.target;
+        this.setState({
+            ...this.state,
+            contactForm: {
+                ...this.state.contactForm,
+                [name]: value
+            }
+        })
+    }
 
     render() {
         return (
@@ -36,27 +50,58 @@ class ContactUs extends Component {
                                 <div className="contactus__section--formflex">
                                     <div className="contactus__section--fromgroup">
                                         <span className='contactus__section--usericon'></span>
-                                        <input className="contactus__section--inputtype" type='text' placeholder="Full Name" />
+                                        <input
+                                            className="contactus__section--inputtype"
+                                            type='text'
+                                            placeholder="Full Name"
+                                            onChange={this.onChaneHandler}
+                                            name='fullName'
+                                        />
                                     </div>
                                     <div className="contactus__section--fromgroup">
                                         <span className='contactus__section--mailinicon'></span>
-                                        <input className="contactus__section--inputtype" type='text' placeholder="Email Address" />
+                                        <input
+                                            className="contactus__section--inputtype"
+                                            type='text'
+                                            placeholder="Email Address"
+                                            onChange={this.onChaneHandler}
+                                            name='email'
+                                        />
                                     </div>
                                 </div>
                                 <div className="contactus__section--formflex">
                                     <div className="contactus__section--fromgroup">
                                         <span className='contactus__section--phoneicon'></span>
-                                        <input className="contactus__section--inputtype" type='text' placeholder="Mobile No." />
+                                        <input
+                                            className="contactus__section--inputtype"
+                                            type='text'
+                                            placeholder="Mobile No."
+                                            onChange={this.onChaneHandler}
+                                            name='mobile'
+                                        />
                                     </div>
                                     <div className="contactus__section--fromgroup">
                                         <span className='contactus__section--mailinicon'></span>
-                                        <input className="contactus__section--inputtype" type='text' placeholder="Subject" />
+                                        <input
+                                            className="contactus__section--inputtype"
+                                            type='text'
+                                            placeholder="Subject"
+                                            onChange={this.onChaneHandler}
+                                            name='subject'
+                                        />
                                     </div>
                                 </div>
                                 <div className="contactus__section--formflex">
                                     <div className="contactus__section--fromgroup contactus__section--textarea">
                                         <span className='contactus__section--mailinicon'></span>
-                                        <textarea className="contactus__section--textinput" rows="5" type='text' placeholder="Your Message"></textarea>
+                                        <textarea
+                                            className="contactus__section--textinput"
+                                            rows="5"
+                                            type='text'
+                                            placeholder="Your Message"
+                                            onChange={this.onChaneHandler}
+                                            name='message'
+                                        ></textarea>
                                     </div>
                                 </div>
                                 <button type="button" className="contactus__section--submitbtn">Submit</button>
