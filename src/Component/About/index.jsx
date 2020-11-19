@@ -32,8 +32,8 @@ class AboutUs extends Component {
                                     <h4 className="aboutus__mainwrap--nameheading">Email :
                                 <span className="aboutus__mainwrap--name"> rajshing012@gmail.com</span></h4>
                                     <h4 className="aboutus__mainwrap--nameheading">Skype :
-                                <span className="aboutus__mainwrap--name"> Indian</span></h4>
-                                    <h4 className="aboutus__mainwrap--nameheading">Langages :
+                                <span className="aboutus__mainwrap--name"> </span></h4>
+                                    <h4 className="aboutus__mainwrap--nameheading">Language :
                                 <span className="aboutus__mainwrap--name"> Hindi, English</span>
                                     </h4>
                                 </div>
