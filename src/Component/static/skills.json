@@ -10,14 +10,14 @@
         "id": 2,
         "displayLabel": "CSS",
         "key": "css",
-        "imgUrl": "./public/img/skills/l2.png",
+        "imgUrl": "./public/img/skills/l3.png",
         "experience": "4+"
     },
     {
         "id": 3,
         "displayLabel": "HTML5",
         "key": "html5",
-        "imgUrl": "./public/img/skills/l3.png",
+        "imgUrl": "./public/img/skills/l2.png",
         "experience": "4+"
     },
     {

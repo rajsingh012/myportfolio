@@ -19,7 +19,7 @@ class RightBar extends Component {
                     <p className="rightbar__wrapper--paragraph">I'm a web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p>
 
                     <Link className="rightbar__wrapper--aboutbtn" to={'/aboutus'}>
-                        More About Us
+                        More About Me
                         </Link>
                 </div>
             </div>
